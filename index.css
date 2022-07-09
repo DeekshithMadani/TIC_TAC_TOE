@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: wheat;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#board {
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px black solid;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-item {
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#refresh-btn {
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    right: 100px;
+    top: 50px;
+}
+
+#undo-btn {
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    right: 100px;
+    top: 100px;
+}
